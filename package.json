@@ -1,0 +1,21 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "写一些常用的js工具",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./scripts/start-service.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:codeping/code-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
+  }
+}
