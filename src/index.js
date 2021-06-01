@@ -1,9 +1,9 @@
-import { sleep } from "./sleep.js"
+import { sleep } from "./utils/sleep.js"
 // console.log("start");
 // await sleep(2000)
 // console.log("end");
 
-import { debounce, debouncefff } from './debounce-throttle.js'
+import { debounce } from './utils/debounce-throttle.js'
 var obj = {
   aaa: 33,
   log: function(count){
@@ -11,7 +11,7 @@ var obj = {
     return count
   }
 }
-let log2 = debouncefff(obj.log, 300, true)
+let log2 = debounce(obj.log, 300, true)
 
 for (let i = 0; i < 10; i++) {
   await sleep(200)
